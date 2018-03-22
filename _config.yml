@@ -6,6 +6,8 @@ url: "http://orkg.org" # the base hostname & protocol for your site, e.g. http:/
 markdown: kramdown
 theme: jekyll-theme-jod
 
+exclude: ["docs", "Gemfile", "Gemfile.lock", "README.md", "ORKGCoreOntology.ttl"]
+
 jekyll_rdf:
     path: "ORKGCoreOntology.ttl"
     include_blank: false
