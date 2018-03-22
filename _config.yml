@@ -13,4 +13,4 @@ jekyll_rdf:
     include_blank: false
     restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), \"http://orkg.org/\") }"
     class_template_mappings:
-      "http://www.w3.org/2002/07/owl#Ontology": "ontology.html"
+      "http://www.w3.org/2002/07/owl#Ontology": "owl_ontology.html"
