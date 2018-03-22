@@ -1,0 +1,14 @@
+title: ORKG Ontology
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://orkg.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-jod
+
+jekyll_rdf:
+    path: "ORKGCoreOntology.ttl"
+    include_blank: false
+    restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), \"http://orkg.org/\") }"
+    class_template_mappings:
+      "http://www.w3.org/2002/07/owl#Ontology": "ontology.html"
